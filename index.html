@@ -259,7 +259,7 @@
 
   <section class="stats-bar">
     <div class="stats-inner">
-      <div class="stat"><div class="stat-value">500+</div><div class="stat-label">Fighters Tracked</div></div>
+      <div class="stat"><div class="stat-value">600+</div><div class="stat-label">Fighters Tracked</div></div>
       <div class="stat"><div class="stat-value">24/7</div><div class="stat-label">Live Market Odds</div></div>
     </div>
   </section>
@@ -506,6 +506,11 @@
       btn.disabled = false;
       btn.textContent = 'Beta Launch';
     }
+  });
+
+  if (location.hash === '#beta') { showPage('register'); }
+  window.addEventListener('hashchange', function() {
+    if (location.hash === '#beta') { showPage('register'); }
   });
 </script>
 
